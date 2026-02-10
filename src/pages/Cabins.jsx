@@ -1,8 +1,10 @@
-import { useEffect } from "react";
+import { useState } from "react";
 import Heading from "../ui/Heading";
 import Row from "../ui/Row";
-import { getCabins } from "../services/apiCabins";
 import CabinTable from "../features/cabins/CabinTable";
+import Button from "../ui/Button";
+import CreateCabinForm from "../features/cabins/CreateCabinForm";
+import AddCabin from "../features/cabins/addCabin";
 
 function Cabins() {
   return (
@@ -14,6 +16,7 @@ function Cabins() {
       <Row>
         <CabinTable></CabinTable>
       </Row>
+      <AddCabin />
     </>
   );
 }
