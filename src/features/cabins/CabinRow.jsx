@@ -3,6 +3,7 @@ import styled from "styled-components";
 import CreateCabinForm from "./CreateCabinForm";
 import Modal from "../../ui/Modal";
 import ConfirmDelete from "../../ui/ConfirmDelete";
+import Table from "../../ui/Table";
 import { useDeleteCabin } from "./useDeleteCabin";
 import { formatCurrency } from "../../utils/helpers";
 import { HiPencil, HiSquare2Stack, HiTrash } from "react-icons/hi2";
@@ -74,7 +75,7 @@ function CabinRow({ cabin }) {
 
   return (
     <>
-      <TableRow>
+      <Table.Row>
         <Img src={image} />
         <Cabin>{name}</Cabin>
         <div>Fits up to {maxCapacity} guests</div>
@@ -109,7 +110,7 @@ function CabinRow({ cabin }) {
             </Modal.Window>
           </Modal>
         </div>
-      </TableRow>
+      </Table.Row>
     </>
   );
 }
