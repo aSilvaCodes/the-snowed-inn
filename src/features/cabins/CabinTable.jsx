@@ -1,4 +1,3 @@
-import styled from "styled-components";
 import Spinner from "../../ui/Spinner";
 import CabinRow from "../cabins/CabinRow";
 import Table from "../../ui/Table";
